@@ -1,0 +1,10 @@
+<h2>Chat room: <%= @room.name %></h2>
+
+<div id="messages"></div>
+<input id="chat-input" type="text" size="80" placeholder="Write a message and press enter!"></input>
+
+<div>
+<span><%= link "Back", to: room_path(@conn, :index) %></span>
+</div>
+
+<script>window.roomName = "<%= @room.name %>";</script>
